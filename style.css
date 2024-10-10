@@ -140,17 +140,21 @@ button {
 }
 
 .tarjetas {
-  width: 80%;
-  margin: auto;
   display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: auto;
   gap: 20px;
+  justify-content: center;
 }
 
 .tarjetas > article {
   border-radius: 10px;
   background-color: whitesmoke;
+  min-width: 250px;
+  min-height: 300px;
+  width: 20%;
   padding: 20px 20px;
-  flex-wrap: wrap;
 }
 
 .tarjetas > article > img {
@@ -211,7 +215,7 @@ footer > ul > h3 {
     padding: 20px;
   }
 
-  .buttons {
+  .button {
     justify-content: center;
     align-items: center;
   }
@@ -229,5 +233,12 @@ footer > ul > h3 {
 
   .digital_agency {
     padding-top: 30px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .tarjetas > article {
+    width: 50%;
+    margin-left: 10px;
   }
 }
